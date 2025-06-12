@@ -19,7 +19,7 @@ import {
 import ParticlesBackground from "../../components/ParticlesBackground";
 
 export default function Home() {
-  const [language, setLanguage] = useState("fa");
+  const [language, setLanguage] = useState("en");
   const [connectorHeights, setConnectorHeights] = useState({});
 
   const content = {
@@ -27,20 +27,20 @@ export default function Home() {
       name: "ستاره عزآبادی",
       title: "توسعه‌دهنده‌ی ارشد فرانت‌اند | متخصص ری‌اکت و نکست‌جی‌اس",
       summary:
-        "توسعه‌دهنده‌ی فرانت‌اند با بیش از ۲ سال تجربه در ساخت اپلیکیشن‌های وب مقیاس‌پذیر و کاربرمحور با استفاده از ری‌اکت و نکست‌جی‌اس. سابقه‌ی اثبات‌شده در بهینه‌سازی کدهای قدیمی، بهبود رابط و تجربه‌ی کاربری، و راهنمایی توسعه‌دهندگان جونیور.",
+        "توسعه‌دهنده‌ی ارشد فرانت‌اند با بیش از ۲ سال تجربه در طراحی و پیاده‌سازی اپلیکیشن‌های وب مقیاس‌پذیر و کاربرمحور با استفاده از React و Next.js. مسلط به معماری مبتنی بر کامپوننت، بهینه‌سازی عملکرد و طراحی ریسپانسیو. در محیط‌های تیمی رشد می‌کنم و با ارتباط مؤثر، پشتیبانی فنی و همکاری سازنده، به تحقق اهداف مشترک کمک می‌کنم. تمرکزم بر خلق تجربه‌های دیجیتال روان، کارآمد و لذت‌بخش برای کاربران است.",
       skills: {
         title: "مهارت‌ها",
         items: [
           { name: "جاوااسکریپت، ری‌اکت، نکست‌جی‌اس", icon: faReact, level: 90 },
-          { name: "اچ‌تی‌ام‌ال۵، سی‌اس‌اس۳، ساس", icon: faCss3Alt, level: 85 },
-          { name: "بوت‌استرپ، تیلویند سی‌اس‌اس", icon: faBootstrap, level: 80 },
-          { name: "رست‌فول اِی‌پی‌آی، گیت", icon: faGitAlt, level: 75 },
+          { name: "اچ‌تی‌ام‌ال۵، سی‌اس‌اس۳، سَس", icon: faCss3Alt, level: 95 },
+          { name: "بوت‌استرپ، تیلویند سی‌اس‌اس", icon: faBootstrap, level: 70 },
+          { name: "رست‌فول اِی‌پی‌آی، گیت", icon: faGitAlt, level: 80 },
           {
             name: "طراحی ریسپانسیو، دسترسی‌پذیری وب",
             icon: faHtml5,
-            level: 85,
+            level: 90,
           },
-          { name: "معماری مبتنی بر کامپوننت", icon: faJs, level: 80 },
+          { name: "معماری مبتنی بر کامپوننت", icon: faJs, level: 85 },
         ],
       },
       experience: {
@@ -90,20 +90,20 @@ export default function Home() {
       name: "Setare Ezabadi",
       title: "Senior Front-End Developer | React & Next.js Specialist",
       summary:
-        "Results-driven Front-End Developer with over 2 years of experience building scalable, user-centric web applications using React and Next.js. Proven track record in optimizing legacy code, leading UI/UX enhancements, and mentoring junior developers.",
+        "Senior Front-End Developer with 2+ years of experience in building robust, scalable, and user-focused web applications using React and Next.js. Skilled in component-based architecture, performance optimization, and responsive design. I thrive in collaborative environments, where I contribute to shared goals through effective communication, technical support, and teamwork. My goal is to create seamless and engaging user experiences that deliver both functionality and delight.",
       skills: {
         title: "Skills",
         items: [
           { name: "JavaScript, React, Next.js", icon: faReact, level: 90 },
-          { name: "HTML5, CSS3, Sass", icon: faCss3Alt, level: 85 },
-          { name: "Bootstrap, Tailwind CSS", icon: faBootstrap, level: 80 },
-          { name: "RESTful APIs, Git", icon: faGitAlt, level: 75 },
+          { name: "HTML5, CSS3, Sass", icon: faCss3Alt, level: 95 },
+          { name: "Bootstrap, Tailwind CSS", icon: faBootstrap, level: 70 },
+          { name: "RESTful APIs, Git", icon: faGitAlt, level: 80 },
           {
             name: "Responsive Design, Web Accessibility",
             icon: faHtml5,
-            level: 85,
+            level: 90,
           },
-          { name: "Component-Based Architecture", icon: faJs, level: 80 },
+          { name: "Component-Based Architecture", icon: faJs, level: 85 },
         ],
       },
       experience: {
@@ -306,7 +306,7 @@ export default function Home() {
           initial="hidden"
           animate={isInView.summary ? "visible" : "exit"}
         >
-          <h2 className="text-xl font-semibold text-gray-400 mb-5 text-shadow">
+          <h2 className="text-xl font-semibold text-cyan-950 mb-2 text-shadow">
             {content[language].summary}
           </h2>
           {isInView.summary && connectorHeights.summary && (
