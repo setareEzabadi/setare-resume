@@ -261,7 +261,7 @@ export default function Home() {
 
       {/* Header */}
       <motion.header
-        className="bg-gray-900 text-white min-h-screen flex items-center justify-center relative z-10"
+        className="bg-gray-900 text-white h-[90vh] flex items-center justify-center relative z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
