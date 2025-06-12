@@ -268,9 +268,9 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto px-4 text-center">
           <motion.img
-            src="/image.jfif"
+            src="/image.jpg"
             alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-cyan-500"
+            className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-cyan-500 object-cover"
             variants={profileVariants}
             whileHover="hover"
           />
