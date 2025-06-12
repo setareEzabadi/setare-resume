@@ -83,11 +83,68 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.summary-section {
+  background: #ffffff; /* سفید ثابت */
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
+  isolation: isolate; /* برای مدیریت لایه‌ها */
+}
+
+.summary-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    #a5f3fc,
+    #fbbf24,
+    #a5f3fc
+  ); /* گرادینت یخی به طلایی */
+  border-radius: 12px;
+  z-index: -1;
+  filter: blur(10px); /* افکت محو برای نور */
+  animation: pulse 6s infinite; /* انیمیشن پالس */
+  opacity: 0.7;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.summary-section h2 {
+  color: #2d3436; /* متن تیره برای کنتراست */
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-shadow: none; /* سایه رو حذف کردیم */
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 1.5rem;
+  position: relative; /* برای لایه‌بندی */
+  z-index: 1; /* بالای انیمیشن */
+}
+
 .wave-bg {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23F8FAFC" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,181.3C672,171,768,149,864,144C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
   background-size: cover;
   border-radius: 12px;
   padding: 1.5rem;
+  background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
